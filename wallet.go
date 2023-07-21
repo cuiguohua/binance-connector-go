@@ -1289,7 +1289,7 @@ func (s *FundingWalletService) NeedBtcValuation(needBtcValuation string) *Fundin
 
 func (s *FundingWalletService) Do(ctx context.Context) (res *FundingWalletResponse, err error) {
 	r := &request{
-		method:   http.MethodGet,
+		method:   http.MethodPost,
 		endpoint: fundingWalletEndpoint,
 		secType:  secTypeSigned,
 	}
